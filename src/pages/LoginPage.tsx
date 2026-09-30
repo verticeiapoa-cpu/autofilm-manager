@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { Mail, Lock, AlertCircle } from 'lucide-react'
 import { Input } from '../components/ui/Input'
 import { Button } from '../components/ui/Button'
@@ -90,6 +90,12 @@ export function LoginPage() {
             >
               Entrar
             </Button>
+            <Link
+              to="/recuperar-senha"
+              className="text-center text-sm text-brand-gold hover:underline font-sora"
+            >
+              Esqueci minha senha
+            </Link>
           </form>
         </div>
 
