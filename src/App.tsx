@@ -4,6 +4,8 @@ import { supabase } from './lib/supabase'
 import { useAppStore } from './store'
 import { Layout } from './components/layout/Layout'
 import { LoginPage } from './pages/LoginPage'
+import { RecoverPasswordPage } from './pages/RecoverPasswordPage'
+import { UpdatePasswordPage } from './pages/UpdatePasswordPage'
 import { DashboardPage } from './pages/DashboardPage'
 import { AgendamentosPage } from './pages/AgendamentosPage'
 import { NovoAgendamentoPage } from './pages/NovoAgendamentoPage'
@@ -38,6 +40,8 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/recuperar-senha" element={<RecoverPasswordPage />} />
+        <Route path="/redefinir-senha" element={<UpdatePasswordPage />} />
         <Route path="/agendar/:slug" element={<PortalClientePage />} />
 
         <Route element={<Layout />}>
